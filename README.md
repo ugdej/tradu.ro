@@ -1,1 +1,2 @@
 # tradu.ro
+traducator romana 
