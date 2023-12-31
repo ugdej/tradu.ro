@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+:root {
+    --font-famili: "Nunito", sans-serif;
+}
+
+body {
+    font-family: var(--font-famili);
+    background-color: coral;
+}
+
+body {
+    font-size: 20px;
+  }
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#language-label {
+    text-align: center;
+    margin-top: 0%;
+    color: rgb(228, 212, 212);
+}
+
+.controls-container {
+    border-radius: 1em;
+}
+
+.btn-start {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(196, 16, 16);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: rgb(253, 253, 253);
+    box-shadow: 1px 1px 20px 1px rgb(250, 4, 4);
+    margin: 0 0 0 0;
+    
+}
+
+.btn-pulsating {
+    transform: scale(1);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
+    }
+
+    100% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+    }
+}
+
+.btn-start:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+.controls-container {
+    background-color: #30363d;
+    width: 340px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 2px 2px 5px 1px antiquewhite;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-log {
+    display: flex;
+    width: 320px;
+    border-radius: 1em;
+    margin: 1em 1em 0.5em 1em;
+    background-color: antiquewhite;
+    padding: 0.3em 1em 0.3em 1em;
+}
+
+#language {
+    margin: 0 0 0 0;
+    font-size: 1.2em;
+    width: 7em;
+    height: 2em;
+    border: none;
+    border-radius: 0.5em;
+    text-align: justify;
+}
+
+.text-log1 {
+    display: flex;
+    width: 320px;
+    border-radius: 1em;
+    margin: 0.5em 1em 0em 1em;
+    background-color: antiquewhite;
+    padding: 0.3em 1em 0.3em 1em;
+}
+
+.btn-translate:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+.btn-translate {
+    height: 40px;
+    width: 100px;
+    background-color: #30363d;
+    font-size: 1.2em;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: rgb(253, 253, 253);
+    box-shadow: 1px 1px 20px 1px antiquewhite;
+    margin: 20px 0 8px 0;
+}
+
+.btn-comun {
+    height: 60px;
+    width: 120px;
+    background-color: #30363d;
+    font-size: 1.2em;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: rgb(253, 253, 253);
+    box-shadow: 1px 1px 20px 1px antiquewhite;
+    margin: 20px 0 0 0;
+}
+
+.btn-comun:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+#targetLanguage {
+    margin: 0 0 0 0;
+    font-size: 1.2em;
+    width: 7em;
+    height: 2em;
+    border: none;
+    border-radius: 0.5em;
+    text-align: justify;
+}
+
+.QR {
+    height: 80px;
+    padding: 0.2em;
+    width: 80px;
+    background-color: #30363d;
+    font-size: 1.2em;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: rgb(253, 253, 253);
+    box-shadow: 1px 1px 20px 1px antiquewhite;
+    margin: 0 30px 0 30px;
+}
+
+.logo {
+    height: 80px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: rgb(253, 253, 253);
+    margin: 0 30px 0 30px;
+    justify-content: space-evenly;
+
+}
+
+.controlsus {
+    background-color: #30363d;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.controale {
+    background-color: #30363d;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-items: start;
+    justify-content: space-evenly;
+
+}
+
+.rec {
+    padding: 0px 10px 0.5px 0.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20%;
+    justify-content: space-evenly;
+}
+
+.traducere {
+    padding: 0px 0.5px 0.5px 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20%;
+    justify-content: space-evenly;
+}
+
+.controljos {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.schimba {
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    border-radius: 20%;
+    justify-content: space-evenly;
+    margin-left: 50px;
+    padding: 0px;
+}
+
+.custom-hide {
+    display: none;
+}
