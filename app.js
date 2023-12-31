@@ -22,9 +22,10 @@ const languages = {
   Spanish: "es-ES",
   Russian: "ru-RU",
   Hungarian: "hu-HU",
-
+  
 }
-  startBtn.addEventListener("click", () => {
+
+startBtn.addEventListener("click", () => {
   recognitionService.lang = determineLanguage();
   recognitionService.continuous = true;
   recognitionService.onresult = handleResult;
@@ -76,15 +77,14 @@ function stopRecording() {
     translateButton.click();
   }, 1000);
   startBtn.classList.remove("btn-pulsating");
-  speakAutomaticallyButton.click();
 }
 
 function startRecording() {
   recognitionService.start();
   startBtn.innerText = "Stop";
   isRecording = true;
-  //textLog.innerHTML = '';
-  //translationTarget.innerHTML = '';
+  textLog.innerHTML = '';
+  translationTarget.innerHTML = '';
   startBtn.classList.add("btn-pulsating");
 }
 
