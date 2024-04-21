@@ -77,10 +77,9 @@ function stopRecording() {
     translateButton.click();
   }, 1000);
   startBtn.classList.remove("btn-pulsating");
+  speakAutomaticallyButton.click();
 }
-  const proba = speakAutomaticallyButton.click();
   
-
 function startRecording() {
   recognitionService.start();
   startBtn.innerText = "Stop";
