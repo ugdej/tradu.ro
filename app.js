@@ -2,7 +2,6 @@ const speechRecognitionService = window.speechRecognition || window.webkitSpeech
 const recognitionService = new speechRecognitionService();
 const startBtn = document.querySelector(".btn-start");
 const textLog = document.querySelector(".text-log");
-const textLog1 = document.querySelector(".text-log1");
 const translateButton = document.querySelector(".btn-translate");
 const translationTarget = document.querySelector("#translationTarget");
 const targetLanguageSelect = document.querySelector("#targetLanguage");
@@ -79,7 +78,6 @@ function stopRecording() {
   }, 1000);
   startBtn.classList.remove("btn-pulsating");
   speakAutomaticallyButton.click();
-  enuntare(textLog1);
 }
   
 function startRecording() {
@@ -197,4 +195,4 @@ function selectLanguageByText(selector, languageText) {
     option.selected = true;
   }
 }
-function enuntare () {speakAutomaticallyButton.click ();}
+
