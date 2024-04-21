@@ -69,7 +69,7 @@ function handleResult(event) {
   textLog.innerHTML += results.slice(-1)[0];
 }
 
-function stopRecording() {{
+function stopRecording() {
   recognitionService.stop();
   startBtn.innerText = "Start";
   isRecording = false;
@@ -78,8 +78,8 @@ function stopRecording() {{
   }, 1000);
   startBtn.classList.remove("btn-pulsating");
 }
-  speakAutomaticallyButton.click();
-  }
+  const proba = speakAutomaticallyButton.click();
+  
 
 function startRecording() {
   recognitionService.start();
