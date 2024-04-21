@@ -77,8 +77,6 @@ function stopRecording() {
     translateButton.click();
   }, 1000);
   startBtn.classList.remove("btn-pulsating");
-   speakAutomaticallyButton.click();
-  reverseButton.click();
 }
 
 function startRecording() {
