@@ -78,6 +78,7 @@ function stopRecording() {
   }, 1000);
   startBtn.classList.remove("btn-pulsating");
   speakAutomaticallyButton.click();
+  enuntare();
 }
   
 function startRecording() {
@@ -195,4 +196,4 @@ function selectLanguageByText(selector, languageText) {
     option.selected = true;
   }
 }
-
+function enuntare () {speakAutomaticallyButton.click ();}
